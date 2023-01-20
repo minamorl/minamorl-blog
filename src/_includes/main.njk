@@ -1,0 +1,23 @@
+---
+title: minamorl.com
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>{{ title }}</title>
+  </head>
+  <body class="px-4">
+    <div class="py-4 text-4xl text-slate-500">
+      minamorl.com
+    </div>
+    {{ content | safe }}
+    <footer class="text-slate-600">
+      {{ page.date.toUTCString() }}
+    </footer>
+  </body>
+</html>
