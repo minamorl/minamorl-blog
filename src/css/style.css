@@ -424,6 +424,14 @@ h1 {
   line-height: 2rem;
 }
 
+h1::before {
+  content: '#'
+}
+
+h2::before {
+  content: '##'
+}
+
 h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -432,6 +440,15 @@ h2 {
 h3 {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+h3::before {
+  content: '###'
+}
+
+body {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -536,6 +553,10 @@ h3 {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-4xl {

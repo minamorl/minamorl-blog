@@ -15,13 +15,13 @@ title: minamorl.com
     <div class="py-4 text-4xl text-slate-500">
       <a href="/">minamorl.com</a>
     </div>
-    <div>
-    <h1>
-    {{ title | safe }}
-    </h1>
-    <div>
-    Date: {{ date.toUTCString() }}
-    </div>
+    <div class="pb-2">
+      <h1>
+      {{ title | safe }}
+      </h1>
+      <div class="text-slate-600">
+      Date: {{ date.toUTCString() }}
+      </div>
     </div>
     {{ content | safe }}
     <footer class="text-slate-600">
